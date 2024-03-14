@@ -17,7 +17,8 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c --watch",
+    "rollup": "rm -rf dist && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,15 @@
     "access": "public"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@swc/core": "^1.4.8",
+    "rollup": "^4.13.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-swc3": "^0.11.0",
+    "rollup-preserve-directives": "^1.1.1",
+    "tslib": "^2.6.2",
     "typescript": "^5.4.2"
   }
 }
