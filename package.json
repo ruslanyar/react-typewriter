@@ -29,5 +29,8 @@
   "homepage": "https://github.com/ruslanyar/react-typewriter#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2"
   }
 }
