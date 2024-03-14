@@ -1,0 +1,36 @@
+.text-typing {
+  margin: 0;
+  font-family: var(--rtw-font-family);
+  font-size: var(--rtw-font-size);
+  font-weight: var(--rtw-font-weight);
+  color: var(--rtw-color);
+}
+
+.cursor {
+  background-image: linear-gradient(
+    var(--rtw-cursor-color),
+    var(--rtw-cursor-color)
+  );
+  background-position: right 0 top 50%;
+  background-repeat: no-repeat;
+  background-size: var(--rtw-cursor-width) 80%;
+  padding-right: var(--rtw-cursor-width);
+}
+
+.blink {
+  animation: cursor 1.2s step-start infinite;
+}
+
+.expand {
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  from,
+  to {
+    background-size: var(--rtw-cursor-width) 0;
+  }
+  50% {
+    background-size: var(--rtw-cursor-width) 80%;
+  }
+}
