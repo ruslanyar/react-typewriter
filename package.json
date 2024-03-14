@@ -1,0 +1,33 @@
+{
+  "name": "@rusyar/react-typewriter",
+  "version": "1.0.0",
+  "description": "A React component with simple typewriting animation",
+  "keywords": [
+    "react",
+    "text",
+    "typewriter",
+    "react-typewriter"
+  ],
+  "author": "ruslanyar <https://github.com/ruslanyar>",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslanyar/react-typewriter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruslanyar/react-typewriter/issues"
+  },
+  "homepage": "https://github.com/ruslanyar/react-typewriter#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
