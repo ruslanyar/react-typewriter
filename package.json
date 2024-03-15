@@ -18,7 +18,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c --watch",
-    "rollup": "rm -rf dist && rollup -c"
+    "rollup": "rm -rf dist && rollup -c",
+    "storybook": "storybook dev -p 5005",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,14 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-webpack5": "^8.0.0",
+    "@storybook/test": "^8.0.0",
     "@swc/core": "^1.4.8",
     "@types/react": "^18.2.65",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -47,6 +57,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-swc3": "^0.11.0",
     "rollup-preserve-directives": "^1.1.1",
+    "storybook": "^8.0.0",
     "tslib": "^2.6.2",
     "typescript": "^5.4.2"
   },
