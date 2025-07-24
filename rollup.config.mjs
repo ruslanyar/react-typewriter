@@ -5,7 +5,7 @@ import preserveDirectives from 'rollup-preserve-directives';
 import resolve from '@rollup/plugin-node-resolve';
 import { swc, defineRollupSwcOption } from 'rollup-plugin-swc3';
 
-import pkgJson from './package.json' assert { type: 'json' };
+import pkgJson from './package.json' with { type: 'json' };
 
 export default [
   {

@@ -1,12 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React from 'react';
 import { Typewriter } from './typewriter';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
   title: 'Text Typewriter',
   component: Typewriter,
-  tags: ['autodocs'],
   parameters: { layout: 'centered' },
 } satisfies Meta<typeof Typewriter>;
 
