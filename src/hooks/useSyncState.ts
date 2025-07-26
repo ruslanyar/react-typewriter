@@ -6,10 +6,13 @@ export const useSyncState = (total?: number) => {
     setTurn(order + 1);
   };
 
+  const isLastTurn = total ? turn === total : false;
+
   return {
     turn,
     next,
     total,
+    isLastTurn,
   };
 };
 

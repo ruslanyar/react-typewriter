@@ -70,8 +70,7 @@ export const Typewriter = ({
         if (!sync) {
           setStatus('paused');
         } else {
-          const { total, turn } = sync.syncState;
-          if (total && total === turn) {
+          if (sync.syncState.isLastTurn) {
             setStatus('paused');
           } else {
             setStatus('finished');
