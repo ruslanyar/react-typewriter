@@ -13,6 +13,16 @@ type Story = StoryObj<typeof Typewriter>;
 export const Default: Story = {
   args: {
     text: 'Hello, World!',
+    tagName: 'h1',
+    fontFamily: '',
+    weight: 500,
+    color: '#000000',
+    cursorAnimation: 'blink',
+    cursorColor: '#6e6e6e',
+    cursorType: 'block',
+    speed: 150,
+    delay: 0,
+    size: '3rem',
   },
   argTypes: {
     tagName: {
