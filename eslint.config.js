@@ -1,8 +1,14 @@
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
+import { defineConfig } from 'eslint/config';
+import { fileURLToPath } from 'node:url';
+import { includeIgnoreFile } from '@eslint/compat';
 
-export default [
+const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
+
+export default defineConfig([
+  includeIgnoreFile(gitignorePath, 'Imported .gitignore patterns'),
   {
     languageOptions: {
       globals: {
@@ -30,4 +36,4 @@ export default [
       semi: ['error', 'always'],
     },
   },
-];
+]);
