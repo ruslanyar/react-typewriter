@@ -21,13 +21,13 @@ export const Typewriter = ({
   cursorType = 'block',
   sync,
 }: TypewriterProps) => {
-  const [displayedText, setDisplayedText] = React.useState('');
   const [index, setIndex] = React.useState(0);
   const [status, setStatus] = React.useState<'typing' | 'paused' | 'finished'>(
     'paused'
   );
   const elementRef = React.useRef<HTMLElement & { align: string }>(null);
 
+  const displayedText = text.substring(0, index);
   const TagName = tagName;
   const isOrderSynced = sync ? sync.order === sync.syncState.turn : true;
   const isCursorVisible =
@@ -63,9 +63,6 @@ export const Typewriter = ({
 
     const timerId = setTimeout(() => {
       if (index < text.length) {
-        setDisplayedText((prev) => {
-          return prev + text[index];
-        });
         setIndex((prev) => prev + 1);
       }
 
